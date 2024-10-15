@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  /* Ensures padding/margins are included in element width/height */
+}
+
+/* Body Styling */
+body {
+  font-family: Poppins, sans-serif;  /* Default font for the website */
+  font-size: 16px;  /* Base font size */
+  line-height: 1.6;  /* Improves text readability */
+  background-color: #1B1B1E;  /* Light background color */
+  color: #FBFFFE;  /* Dark gray text color */
+  margin: 0;
+  padding: 0;
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 15px;  /* Space below headings */
+  font-weight: bold;  /* Bold headings */
+  color: #FBFFFE;  /* Darker text for emphasis */
+}
+
+/* Paragraph Styling */
+p {
+  margin-bottom: 15px;  /* Spacing between paragraphs */
+}
+
+/* Anchor Links */
+a {
+  text-decoration: none;  /* Remove underline from links */
+  color: #99d2fd;  /* Default link color */
+}
+
+a:hover {
+  text-decoration: underline;  /* Underline links on hover */
+}
+
+a:visited {
+    color: #ba82e2;  /* Visited link color */
+}
+
+/* Image Styling */
+img {
+  max-width: 100%;  /* Ensure images don’t overflow their containers */
+  height: auto;  /* Maintain aspect ratio */
+  display: block;
+}
+
+/* List Styling */
+ul, ol {
+  margin-left: 20px;  /* Indent lists */
+}
+
+li {
+  margin-bottom: 10px;  /* Space between list items */
+}
