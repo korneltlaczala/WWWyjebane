@@ -3,30 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Document</title>
 </head>
 <body>
-    <form method="get" action="test.html">
+    <form method="post" action="test.html">
         <fieldset>
-            <legend>Product info</legend>
-            <label for="pname">Product name:</label>
-            <input type="text" id="pname" name="pname" value="Pants for Esteban Ocon"><br>
+            <legend>Kup Kapitana</legend>
+            <label for="username">Your name:</label>
+            <input type="text" id="username" name="username" placeholder="name"><br>
+            <label for="comment">Comment</label>
+            <textarea id="comment" name="comment" rows="12" cols="50"></textarea><br>
+
+            <label for="flavour">Flavour</label>
+            <select id="flavour" name="flavour">
+                <option value="OG">Original</option>
+                <option value="DQ">Daiquiri</option>
+                <option value="BL">Blue Lagoon</option>
+                <option value="JB">Jack on the Beach</option>
+                <option value="CL">Cuba Libre</option>
+            </select><br>
             <label for="price">Price:</label>
-            <input type="text" id="price" name="price" value="31.31" disabled><br>
-
-            <label for="pdesc">Product description</label>
-            <textarea id="pdesc" name="pdesc" rows="12" cols="50"></textarea><br>
-
-            <label for="country">Produced in</label>"
-            <select id="country" name="country">
-                <option value="PL">Polska</option>
-                <option value="PU">Pudzian</option>
-                <option value="BW">Bartłomiej</option>
-                <option value="TŻ">Tomasz</option>
-                <option value="KT">Kornel</option>
-            </select><br><br>
-
-            <input type="submit" value="Submit">
+            <input type="text" id="price" name="price" value="3.59" disabled><br><br>
+            <div class="confirm-box">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+            </div>
         </fieldset>
     </form>
 </body>
