@@ -1,5 +1,6 @@
 :root {
-    --text-outline-color: 245, 245, 245;
+    --text2-color: rgb(212, 215, 219);
+    --cone-orange: #ee7e07;
 }
 
 * {
@@ -19,9 +20,9 @@ body {
     font-weight: bold;
     text-align: center;
     margin: 0.5em 0;
-    color:#ee9507;
+    color: var(--cone-orange);
     text-shadow:
-        1.5px 2.5px 6px rgba(var(--text-outline-color), 1);
+        1.5px 2.5px 6px var(--text2-color);
 }
 
 .cardbox {
@@ -35,25 +36,36 @@ body {
 .card {
     height: 15em;
     width: 10em;
-    background-color: whitesmoke;
+    background-color: var(--cone-orange);
     border-radius: 0.5em;
     overflow: hidden;
+    transition: scale 0.2s ease-out;
 }
 
 .card > img {
     height: 12em;
     width: 100%;
     object-fit: cover;
-    transition: height 0.3s, ease-out;
+    transition: all 0.3s ease-out;
 }
 
 .card .name {
     text-align: center;
     padding-top: 0.2em;
+    color: var(--text2-color);
+    transition: position 0.3s ease-out;
 }
 
-.img:hover {
-    height: 15em;
+.card:hover {
+    scale: 1.02;
+    cursor: pointer;
 }
 
+.card:hover > img{
+    height: 100%;
+    scale: 1.2;
+}
 
+.card:hover .name {
+
+}
