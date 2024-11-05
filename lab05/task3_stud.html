@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Game</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        var i = 0;
+        var upperList = [url1, url2, url3, url4]; //FILL valid
+
+        var lowerList = [];
+
+
+        function change() {
+
+
+        }
+
+        function loader() {
+            setInterval('change()', 1000);
+        }
+
+        window.onload = loader;
+    </script>
+    <style type="text/css">
+        #upper {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            left: 0px;
+            height: 66%;
+            text-align: center;
+        }
+        
+        #lower {
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            height: 34%;
+        }
+        
+        img {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="upper"></div>
+    <div id="lower"></div>
+</body>
+
+</html>

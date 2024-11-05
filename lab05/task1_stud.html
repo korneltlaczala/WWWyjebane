@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab6 Task 1 - animation</title>
+    <style type="text/css">
+        #mydiv {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 1px solid black;
+        }
+
+    </style>
+    <script type="text/javascript">
+        var pos = 0;
+
+        function move_window() {
+            document.getElementById('mydiv').style.top = (2 * pos) + 'px';
+            document.getElementById('mydiv').style.left = pos + 'px';
+            pos += 10;
+            if (pos > 200) {
+                pos = 0;
+            }
+            setTimeout(move_window, 300);
+        }
+    </script>
+</head>
+
+<body onload="move_window()">
+    <div id="mydiv"></div>
+</body>
+
+</html>

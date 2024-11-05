@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #25252c;
+    font-family: Poppins, sans-serif;
+}
+
+button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 50%;
+    border: none;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#level {
+    margin: 0 auto;
+    font-size: 5em;
+}
+
+.positive {
+    background-color: orange;
+}
+
+.negative {
+    background-color: gray;
+}
