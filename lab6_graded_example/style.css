@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    margin: 1em 2em;
+}
+
+header {
+    background-color: #1e035e;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2em 0;
+
+    border-radius: 1em;
+    border-left: 1em solid #48a131;
+    border-right: 1em solid #f0d90f;
+
+}
+
+header h1 {
+    font-size: 2em;
+    width: 100%;
+    text-align: center;
+}
+
+header h2{
+    font-size: 1.2em;
+}
+
+header h1::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0.5em;
+    border-top: 0.3em dashed red;
+}
+
+section {
+    margin: 2em 0;
+    padding: 2em;
+    background-color: #add8e6;
+    max-height: 9em;
+}
+
+section h2 {
+    font-size: 1em;
+}
+
+section .content {
+    margin: 1em 0;
+    display: flex;
+}
+
+.content img {
+    width: 5em;
+}
+
+section:nth-of-type(3) {
+    position: relative;
+}
+
+.waves {
+    background-image: url('img/fale.png');
+    background-repeat: repeat-x;
+    background-size: contain;
+
+    height: 2em;
+    width: 100vw;
+
+    left: -2em;
+    top: 50%;
+    transform: translate(0, -50%);
+    
+    position: absolute;
+    z-index: -1;
+}
+
+footer {
+    margin: 0 -2em;
+    margin-top: 2em;
+}
+
+footer #contact-box {
+    text-align: right;
+}
+
+footer #sticky-banner {
+    display: flex;
+    width: 100%;
+    padding-bottom: 2em;
+    background-color: rgb(255, 0, 0, 0.5);
+
+    font-size: 1.5em;
+
+    position: fixed;
+    bottom: 0;
+}
+
+footer #sticky-banner p {
+    color: gray;
+}
+
+footer #sticky-banner button {
+    font-size: 1em;
+    color: #ff7e7e;
+    background-color: #7e7e7e;
+    border: 1px solid #cacaca;
+}
+
+footer ul {
+    font-weight: bold;
+    margin: 0 0.5em;
+}
+
+footer li {
+    color: #59ad59;
+    font-size: 0.5em;
+    margin-left: 2em;
+}
+
+footer li:first-of-type {
+    margin-top: 2em;
+}
+
+footer li a {
+    color:#59ad59;
+}
+
+
+footer .mail {
+    color: #59ad59;
+}
