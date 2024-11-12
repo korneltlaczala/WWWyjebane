@@ -4,9 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Form</title>
 </head>
+
+<header>
+    <h1>Something about something</h1>
+    <h2>La ala lo li le</h2>
+</header>
+
 <body>
+    <h3>Reserve a seat</h3>
+    <div class="timetable-container">
+        <h3>Timetable</h3>
+        <table>
+            <tr>
+                <th class="tth">Weekday</th>
+                <th class="tth">8-10</th>
+                <th class="tth">10-12</th>
+                <th class="tth">14-17</th>
+            </tr>
+            <tr>
+                <td class="ttd">Saturday</td>
+                <td class="free" rowspan="2"></td>
+                <td class="res"></td>
+                <td class="free"></td>
+            </tr>
+            <tr>
+                <td class="ttd">Sunday</td>
+                <td class="free" colspan="2"></td>
+            </tr>
+        </table>
+        <div class="waves pos2"></div>
+    </div>
+    <h3>Fill</h3>
+
+    <form id="form" action="form.php" method="post">
+        <fieldset>
+            <legend>Date</legend>
+            
+            <div class="form-group">
+                <label for="day">Day</label>
+                <div class="spacer"></div>
+                <select name="day" id="day" required>
+                    <option value="Saturday">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="slot">Time slot</label>
+                <div class="spacer"></div>
+                <select name="slot" id="slot">
+                    <option value="8-10">8-10</option>
+                    <option value="10-12">10-12</option>
+                    <option value="14-17">14-17</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Group info</legend>
+                <div class="form-group">
+                    <label for="group-name">Group name</label>
+                    <div class="spacer"></div>
+                    <input type="text" id="group-name" name="group-name" required>
+                    <span id="group-name-feedback" class="feedback"></span>
+                </div>
+                <div class="form-group">
+                    <label for="group-password">Group password</label>
+                    <div class="spacer"></div>
+                    <input type="password" id="group-password" name="group-password" required>
+                    <span id="group-password-feedback" class="feedback"></span>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <div class="spacer"></div>
+                    <input type="tel" id="phone" name="phone" required>
+                    <span id="phone-feedback" class="feedback"></span>
+                </div>
+        </fieldset>
+        <button type="submit">Send form</button>
 
 </body>
+
+<footer>
+    <div id="contact-box">
+        <address>
+            <p>Fissh</p>
+            <p>00-662 Warszawa</p>
+            <p>ul. Koszykowa 75</p>
+        </address>
+        <p class="mail">info@fisshpw.pw</p>
+    </div>
+</footer>
+
 </html>

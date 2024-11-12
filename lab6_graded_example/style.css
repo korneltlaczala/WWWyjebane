@@ -1,3 +1,10 @@
+:root {
+    --lightred: rgb(255, 165, 165);
+    --midred: rgb(252, 130, 130);
+    --lightgreen: rgb(171, 248, 171);
+    --midgreen: rgb(127, 215, 127);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -63,7 +70,8 @@ section .content {
     width: 5em;
 }
 
-section:nth-of-type(3) {
+section:nth-of-type(3),
+.timetable-container {
     position: relative;
 }
 
@@ -76,11 +84,19 @@ section:nth-of-type(3) {
     width: 100vw;
 
     left: -2em;
-    top: 50%;
-    transform: translate(0, -50%);
     
     position: absolute;
     z-index: -1;
+}
+
+.pos1 {
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.pos2 {
+    top: 0;
+    transform: translate(0, 1em);
 }
 
 footer {
@@ -137,4 +153,83 @@ footer li a {
 
 footer .mail {
     color: #59ad59;
+}
+
+h3,
+table {
+    margin-top: 1em;
+}
+
+table th {
+    padding: 0.3em;
+    border: 1px solid blue;
+}
+
+table td {
+    padding: 0.3em;
+    border: 1px dotted blue;
+}
+
+table .free {
+    content: "Free";
+    background-color: green;
+}
+
+table .free::after {
+    content: "Free";
+}
+
+table .res {
+    background-color: red;
+}
+
+table .res::after {
+    content: "Res.";
+}
+
+fieldset {
+    padding: 1em;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+}
+
+fieldset .form-group {
+    display: grid;
+    grid-template-columns: 0.8fr 0fr 1fr 3fr;
+    gap: 2em;
+}
+
+fieldset label {
+    padding: 0.2em 0em;
+}
+
+fieldset .spacer {
+    border: 1px solid #ccc;
+}
+
+fieldset .feedback {
+    padding: 0.2em;
+    background-color: var(--lightred);
+    visibility: hidden;
+    border-radius: 0.3em;
+}
+
+fieldset input {
+    padding: 0.2em;
+}
+
+.valid-input {
+    border: 3px solid var(--midgreen);
+    border-radius: 0.3em;
+    background-color: var(--lightgreen);
+}
+
+.invalid-input {
+    border: 3px solid var(--midred);
+    border-radius: 0.3em;
+    background-color: var(--lightred);
 }
