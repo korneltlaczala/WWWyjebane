@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (! validateForm) {
             message = 'Please fill out the form correctly. ';
         }
-
         if (! validateName()) {
             message += 'Name must be letters only. ';
         }
@@ -43,18 +42,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function validateName() {
         const val = name.value;
         let valid = true;
-        name.classList.add('valid-input');
-        name.classList.remove('invalid-input');
 
         if (!/^[a-zA-Z]+$/.test(val)) {
             valid = false;
         }
-
-        if (valid == false) {
-            name.classList.remove('invalid-input');
-            name.classList.remove('valid-input');
-        }
-
+        validateInput(name, valid);
         return valid;
     }
 
@@ -62,17 +54,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const val = email.value;
         let valid = true;
 
-        email.classList.add('valid-input');
-        email.classList.remove('invalid-input');
-
         if (!/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/.test(val)) {
             valid = false;
         }
-
-        if (valid == false) {
-            email.classList.add('invalid-input');
-            email.classList.remove('valid-input');
-        }
+        validateInput(email, valid);
 
         return valid;
     }
@@ -81,20 +66,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const val = phone.value;
         let valid = true;
 
-        phone.classList.add('valid-input');
-        phone.classList.remove('invalid-input');
-        
         if (val.length != 9) {
             valid = false;
         }
         if (!/^\d+$/.test(val)) {
             valid = false;
         }
-
-        if (valid == false) {
-            phone.classList.add('invalid-input');
-            phone.classList.remove('valid-input');
-        }
+        validateInput(phone, valid);
 
         return valid;
     }
@@ -103,17 +81,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const val = flight.value;
         let valid = true;
 
-        flight.classList.add('valid-input');
-        flight.classList.remove('invalid-input');
-
         if (val != 'F456' && val != 'F123') {
             valid = false;
         }
-        
-        if (valid == false) {
-            flight.classList.add('invalid-input');
-            flight.classList.remove('valid-input');
-        }
+        validateInput(flight, valid);
 
         console.log(valid);
         return valid;
@@ -121,5 +92,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function validateForm() {
         return validateName() && validateEmail() && validatePhone() && validateFlight();
+    }
+
+    function validateInput(input, valid) {
+        if (valid) {
+            input.classList.add('valid-input');
+            input.classList.remove('invalid-input');
+        } else {
+            input.classList.add('invalid-input');
+            input.classList.remove('valid-input');
+        }
     }
 });
