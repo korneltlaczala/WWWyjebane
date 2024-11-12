@@ -1,0 +1,50 @@
+
+Laboratorium 6 - Zadanie punktowane nr 1 (20 pkt) 
+
+
+Stwórz 2 strony HTML wyglądające tak, jak na obrazach, które znajdziesz 
+w folderze.
+ 
+Obie strony mają być napisasne zgodnie z HTML5, wszystkie style muszą znaleźć
+się w jednym pliku CSSs, używanym przez obie strony. Wymagana jest pełna 
+poprawność używanego HTML. Nie można używać atrybutu style ani zawartości elementu <style>.
+Należy wykorzystać semantycznne tagi. 
+
+Wszystkie obrazki niezbędne do wykonania zadania (tło, obrazy) są 
+załączone. Dodatkowo dany jest plik zawierający tekst strony.
+Paleta kolorów może być inna niż na przykładzie o ile oddaje zastosowane
+przejścia i kontrasty.
+
+Pamiętaj, że CSS może być cache'owany przez przeglądarkę, w której otwierasz 
+stronę. W przypadku problemów takich jak brak zmian wyglądu uruchom w nowej karcie, 
+zrestartuj przeglądarkę lub pamięć podręczną (z ostatniej godziny itp.), lub użyj trybu in private.
+
+Czas pisania zadania : 90 minut.
+Rozwiązania należy zwrócić przez email:
+do : grzegorz.ostrek@pw.edu.pl
+temat : [PAW] Zadanie 1
+Należy załączyć rozwiązanie w formie pliku w formacie zip o nazwie: nazwisko.i[mię].zip , 
+które zawiera wszystkie pliki wchodzące w skład rozwiązania, w tym pliki graficzne, wymagane do poprawnego wyświetlenia strony.
+W treści maila lub komentarzach można wpisać wersję przeglądarki używanej do testowania.
+
+Plik należy wysłać najpóźniej 90 minut po rozpoczęciu pisania zadania. 
+
+Szczegółowa punktacja (punkty przyznane tylko za 100% wykonania podzadania):
+3p Wszystkie pliki są zgodne ze standardem HTML5/CSS3 i uwzględnionymi wymienionymi wymaganiami
+1p Odsyłaczy do sekcji opisów znajdujących się na stronie
+2p Tabelka z rozkładem lotów z odpowiednimi kolorami obramowań
+2p Sekcje - obramowanie (box-shadow, lub ramka), marginesy
+2p Link odwiedzony jest oznaczony kolorem zielonym. Link Home wskazuje na stronę główną, Go to form na stronę z formularzem
+2p Stopka strony, nie zmienia pozycji podczas przewijania
+1p Obraz w sekcji 'Brief history..' po prawej stronie. Tło strony z pliku bg.png.
+
+Formularz:
+1p Pola formularza, przycisk wysyłania prowadzący zwrotnie do strony początkowej, 
+   zgrupowane pola otoczone ramką z legendą
+1p Pola typu radio pozwalają na wybór tylko jednej opcji.
+5p Sprawdzenie numeru formularza przed wysłaniem
+   - nazwisko - tylko litery
+   - email w poprawnym formacie
+   - nr tel - 9 cyfr
+   - numer lotu zgodny z podanym w tabeli (przepisany) 
+   Niepoprawne wartości powodują podświetlenie na czerwono pola z informacją o rodzaju błędu.
