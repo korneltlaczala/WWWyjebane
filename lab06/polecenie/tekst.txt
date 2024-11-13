@@ -1,0 +1,42 @@
+
+MiNI Aviation
+Home Aircraft Aviation History
+Amazing Aircraft
+F-16 Fighting Falcon Boeing 747 Airbus A380
+The aviation industry has revolutionized travel and transportation. From the early days of flight to modern-day supersonic jets, the sky is no longer the limit.
+
+A Brief History of Flight
+The dream of human flight has captivated minds for centuries. From the Wright brothers' pioneering flight to the space age, aviation has come a long way.
+
+Wright Brothers' First Flight
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Please fill out the form on the next page.
+
+Go to Form
+© 2024 MiNI Aviation
+
+
+=====================
+
+MiNI Aviation
+Home
+Flight Reservation Details
+Flight Number	Departure	Arrival	Date	Time	Price
+F123	New York	London	2024-11-12	10:00 AM	$500
+F456	Tokyo	Paris	2024-12-25	12:00 PM	¥800
+Passenger Information
+Name:
+te3t
+Email:
+a@a
+Phone Number:
+1234567890
+Flight Number:
+1
+Not valid email address. Phone number should have nine digits. No such flight available. Please correct the errors in the form.
+ Economy
+
+ Bussines
+Book Flight
+© 2024 MiNI Aviation

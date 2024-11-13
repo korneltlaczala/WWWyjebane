@@ -1,0 +1,168 @@
+:root {
+    --dark-color: #333333;
+    --light-color: white;
+    --light-text-color: whitesmoke;
+    --unvisited-link-color: #3d89c6;
+    --visited-link-color: #7dc97d;
+    --section-shadow-color: rgba(0, 0, 0, 0.3);
+    --success-color: #4caf50;
+    --valid-input-light-color: #b7f4b9;
+    --valid-input-dark-color: #9bf29e;
+    --invalid-input-light-color: #f4b7b7;
+    --invalid-input-dark-color: #fa9797;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--unvisited-link-color);
+}
+
+a:visited {
+    color: var(--visited-link-color);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('img/bg.png');
+    background-size: fill;
+}
+
+header {
+    height: 8em;
+    padding: 2em;
+    background-color: var(--dark-color);
+}
+
+header h1 {
+    color: var(--light-text-color);
+}
+
+header ul {
+    margin-top: 1em;
+    list-style-type: none;
+    display: flex;
+    gap: 1em;
+}
+
+section {
+    margin: 2em;
+    padding: 2em 1em;
+    background-color: var(--light-color);
+    box-shadow: 5px 5px 15px 5px var(--section-shadow-color);
+}
+
+section .gallery {
+    margin: 2em 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em
+}
+
+section .gallery img {
+    height: 10em;
+    width: 16em;
+    object-fit: cover;
+}
+
+section p {
+    margin: 1em 0;
+}
+
+section .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+section .two-col img {
+    width: 100%;
+}
+
+#form-prompt {
+    padding: 1em;
+    margin-bottom: 5em;
+}
+
+#form-prompt p {
+    margin: 1em 0;
+}
+
+footer {
+    background-color: var(--dark-color);
+    color: var(--light-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4em;
+
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+table {
+    margin-top: 1em;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table * {
+    border: 1px solid gray;
+    padding: 0.4em;
+}
+table th {
+    background-color: #ccc;
+    color: black;
+}
+
+form {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group input {
+    padding: 0.4em;
+    font-size: 1em;
+}
+
+.form-sec {
+    margin-bottom: 5em;
+}
+
+form button {
+    padding: 0.4em;
+    font-size: 1em;
+    background-color: var(--success-color);
+    color: var(--light-text-color);
+    border: none;
+    border-radius: 0.3em;
+    box-shadow: 2px 2px 3px 0 var(--section-shadow-color);
+    cursor: pointer;
+}
+
+form input {
+    outline: none;
+}
+
+form .valid-input {
+    border: 2px solid var(--valid-input-dark-color);
+    background-color: var(--valid-input-light-color);
+}
+
+form .invalid-input {
+    border: 2px solid var(--invalid-input-dark-color);
+    background-color: var(--invalid-input-light-color);
+}
